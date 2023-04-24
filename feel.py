@@ -2,8 +2,8 @@ import cv2
 import tensorflow as tf
 import numpy as np
 
-face_cascade = cv2.CascadeClassifier('/home/kali/data/haarcascades/haarcascade_frontalface_default.xml')
-model = tf.keras.models.load_model('/home/kali/Downloads/emotion_detection_model.h5')
+face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+model = tf.keras.models.load_model('emotion_detection_model.h5')
 cap = cv2.VideoCapture(0)
 
 while True:
